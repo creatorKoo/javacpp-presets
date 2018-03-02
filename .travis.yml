@@ -305,9 +305,131 @@ matrix:
         install: true
         script: ./ci/install-ppc.sh
 
+      - os: linux
+        env: PROJ=opencv,flandmark OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=opencv OS=linux-x86_64 EXT=-gpu
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=ffmpeg OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=flycapture OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=libdc1394 OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=libfreenect OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=libfreenect2 OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=librealsense OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=artoolkitplus OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=chilitags OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=hdf5 OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=mkl OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=openblas OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=arpack-ng OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=fftw OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=gsl OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=llvm OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=libpostal OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=leptonica,tesseract OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=caffe OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=caffe OS=linux-x86_64 EXT=-gpu
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=cuda OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=mxnet OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=tensorflow OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=tensorflow OS=linux-x86_64 EXT=-gpu
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=ale OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=liquidfun OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=skia OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: linux
+        env: PROJ=systems OS=linux-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+
       - os: osx
         osx_image: xcode7.3
         env: PROJ=opencv,flandmark OS=macosx-x86_64
+        install: true
+        script: ./ci/install-travis.sh
+      - os: osx
+        osx_image: xcode7.3
+        env: PROJ=opencv OS=macosx-x86_64 EXT=-gpu
         install: true
         script: ./ci/install-travis.sh
       - os: osx
@@ -397,6 +519,11 @@ matrix:
         script: ./ci/install-travis.sh
       - os: osx
         osx_image: xcode8.3
+        env: PROJ=caffe OS=macosx-x86_64 EXT=-gpu
+        install: true
+        script: ./ci/install-travis.sh
+      - os: osx
+        osx_image: xcode8.3
         env: PROJ=cuda OS=macosx-x86_64
         install: true
         script: ./ci/install-travis.sh
@@ -410,6 +537,11 @@ matrix:
         env: PROJ=tensorflow OS=macosx-x86_64
         install: true
         script: ./ci/install-travis.sh
+#      - os: osx
+#        osx_image: xcode8.3
+#        env: PROJ=tensorflow OS=macosx-x86_64 EXT=-gpu
+#        install: true
+#        script: ./ci/install-travis.sh
       - os: osx
         osx_image: xcode7.3
         env: PROJ=ale OS=macosx-x86_64
@@ -430,234 +562,3 @@ matrix:
         env: PROJ=systems OS=macosx-x86_64
         install: true
         script: ./ci/install-travis.sh
-
-      - os: linux
-        env: PROJ=opencv,flandmark OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=ffmpeg OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=flycapture OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=libdc1394 OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=libfreenect OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=libfreenect2 OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=librealsense OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=artoolkitplus OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=chilitags OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=hdf5 OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=mkl OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=openblas OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=arpack-ng OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=fftw OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=gsl OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=llvm OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=leptonica,tesseract OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=caffe OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=mxnet OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=tensorflow OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=ale OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=liquidfun OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=skia OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=systems OS=linux-x86
-        install: true
-        script: ./ci/install-travis.sh
-
-      - os: linux
-        env: PROJ=opencv,flandmark OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=ffmpeg OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=flycapture OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=libdc1394 OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=libfreenect OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=libfreenect2 OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=librealsense OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=artoolkitplus OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=chilitags OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=hdf5 OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=mkl OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=openblas OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=arpack-ng OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=fftw OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=gsl OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=llvm OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=libpostal OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=leptonica,tesseract OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=caffe OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=cuda OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=mxnet OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=tensorflow OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=ale OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=liquidfun OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=skia OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=systems OS=linux-x86_64
-        install: true
-        script: ./ci/install-travis.sh
-
-      - os: linux
-        env: PROJ=opencv OS=linux-x86_64 EXT=-gpu
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=caffe OS=linux-x86_64 EXT=-gpu
-        install: true
-        script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=tensorflow OS=linux-x86_64 EXT=-gpu
-        install: true
-        script: ./ci/install-travis.sh
-
-      - os: osx
-        osx_image: xcode7.3
-        env: PROJ=opencv OS=macosx-x86_64 EXT=-gpu
-        install: true
-        script: ./ci/install-travis.sh
-      - os: osx
-        osx_image: xcode8.3
-        env: PROJ=caffe OS=macosx-x86_64 EXT=-gpu
-        install: true
-        script: ./ci/install-travis.sh
-#      - os: osx
-#        osx_image: xcode8.3
-#        env: PROJ=tensorflow OS=macosx-x86_64 EXT=-gpu
-#        install: true
-#        script: ./ci/install-travis.sh

@@ -1,4 +1,6 @@
 
+ * Drop support for the `linux-x86` platform, but build more presets for `linux-x86_64` under CentOS 6 with devtoolset-6
+ * Add support for Windows to presets for LLVM ([pull #530](https://github.com/bytedeco/javacpp-presets/pull/530))
  * Add builds for `android-arm64` and `android-x86_64` platforms ([issue #52](https://github.com/bytedeco/javacpp-presets/issues/52))
  * Fix x265 encoding with FFmpeg on Android ([issue bytedeco/javacv#866](https://github.com/bytedeco/javacv/issues/866))
  * Add presets for ARPACK-NG
