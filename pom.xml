@@ -520,6 +520,7 @@
         <module>liquidfun</module>
         <module>skia</module>
         <module>systems</module>
+        <module>imagemagick</module>
       </modules>
       <properties>
         <javacpp.platform>${os.name}-${os.arch}</javacpp.platform>
@@ -1317,6 +1318,7 @@
         <module>cuda</module>
         <module>ale</module>
         <module>systems</module>
+        <module>imagemagick</module>
       </modules>
       <properties>
         <javacpp.platform.android-arm></javacpp.platform.android-arm>
